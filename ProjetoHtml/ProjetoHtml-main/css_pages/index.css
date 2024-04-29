@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.body_text{
+    margin-top: 100px;
+}
+
+.header {
+    width: 100%;
+    height: 16vh;
+    background-color: #5E1515;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: fixed;
+    top: 0; /* Garante que o header fique no topo da janela do navegador */
+}
+
+.header_titulo {
+    margin-top: -2%;
+    margin-right: auto; /* Adiciona margem à direita para centralizar */
+    width: 100%;
+    height: 8vh;
+    background-color: #5E1515;
+    display: flex;
+    justify-content: center; /* Alterado para centralizar */
+    align-items: center;
+    color: white;
+}
+
+/*header menu criando linha e alinhando itens*/
+
+.header_menu {
+    margin-top: -3%;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+}
+
+.header_menu a {
+    position: relative;
+    padding: 0 1%; /* Adiciona 0.5% de espaçamento à esquerda e à direita de cada item */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: white; /* Garante que o texto seja branco */
+}
+
+.header_menu a:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    height: 50%;
+    width: 1px;
+    background-color: white; /* Define a cor da linha */
+}
+
+/*header menu criando linha e alinhando itens*/
+
+
+.texto{
+    margin-top: 8vh;
+}
+
+.header > h3{
+    font-size: 1.6vh;
+}
+
+.footer {
+    width: 100%;
+    height: 14vh;
+    background-color: #5E1515;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    bottom: 0;
+    position: fixed;
+}
+
+
+
+.container {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container_slogan {
+    margin-top: -110px;
+    width: 14vw;
+    min-width: 200px;
+    height: 20vh;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+    margin-bottom: 20px; /* Adiciona uma margem inferior ao .container_slogan */
+}
+
+.container_slogan > h1 {
+    font-weight: bolder;
+    font-size: 3vh;
+}
+
+.container_slogan > p {
+    font-size: 1.8vh;
+    position: relative;
+    z-index: 2; /* Ajuste o z-index conforme necessário para sobrepor a imagem */
+}
+
+.imagem_mbpe_motors {
+    margin-left: 50px;
+    margin-top: -400px;
+    width: 25vw;
+    min-width: 300px;
+    height: auto;
+}
+
+/* Adicione uma media query para fazer ajustes específicos em telas menores */
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Altera para empilhar em telas menores */
+        height: auto; /* Ajusta a altura automaticamente */
+    }
+
+    .container_slogan {
+        width: 80vw; /* Ajusta o tamanho do container de slogan para ocupar a largura total */
+        min-width: 0; /* Remove a largura mínima para ocupar a largura total em telas menores */
+        height: auto; /* Ajusta a altura automaticamente */
+    }
+
+    .imagem_mbpe_motors {
+        width: 80vw; /* Ajusta o tamanho da imagem para ocupar a largura total */
+        min-width: 0; /* Remove a largura mínima para ocupar a largura total em telas menores */
+    }
+}
+
+/*
+.container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    background-color: #d4a5a5;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container_slogan {
+    width: 14vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.container_slogan > h1 {
+    font-weight: bolder;
+    font-size: 3vh;
+}
+
+.container_slogan > p {
+    font-size: 1.8vh;
+}
+
+.imagem_mbpe_motors {
+    width: 25vw;
+}
+
+.container_btn_ver_modelos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+*/ 
+
+/* .btn_ver_modelos {
+    width: 15vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5E1515;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 1px;
+} */
+.btn_ver_modelos {
+    margin-top: -120px;
+    width: 15vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5E1515;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2; /* Adiciona um z-index maior para o botão */
+}
+
+/* Adicione uma media query para ajustar o tamanho do botão em dispositivos móveis */
+@media screen and (max-width: 600px) {
+    .btn_ver_modelos {
+        width: 80vw;
+        height: 8vh;
+        font-size: 1.2em;
+    }
+}

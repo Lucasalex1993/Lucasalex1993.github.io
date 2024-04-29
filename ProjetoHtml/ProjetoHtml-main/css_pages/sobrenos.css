@@ -1,0 +1,251 @@
+
+
+.header {
+  width: 100%;
+  height: 16vh;
+  background-color: #5E1515;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.header_titulo {
+  margin-top: -2%;
+  margin-right: auto; /* Adiciona margem à direita para centralizar */
+  width: 100%;
+  height: 8vh;
+  background-color: #5E1515;
+  display: flex;
+  justify-content: center; /* Alterado para centralizar */
+  align-items: center;
+  color: white;
+}
+
+/*header menu criando linha e alinhando itens*/
+
+.header_menu {
+  margin-top: -3%;
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+}
+
+.header_menu a {
+  padding: 0 1%; /* Adiciona 0.5% de espaçamento à esquerda e à direita de cada item */
+  text-decoration: none; /* Remove o sublinhado padrão dos links */
+  color: white; /* Garante que o texto seja branco */
+}
+
+.form-header h1::after {
+  content: '';
+  display: block;
+  width: 5rem;
+  height: 0.3rem;
+  background-color: #5E1515;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 10px;
+}
+
+
+/*header menu criando linha e alinhando itens*/
+
+.header > h3{
+  font-size: 1.6vh;
+}
+  .pagina{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pagina .logo {
+    width: 201px;
+    height: 31px;
+    top: 42px;
+    left: 51px;
+    object-fit: cover;
+  }
+  
+  .pagina .screenshot {
+    height: 50vh;
+    object-fit: cover;
+  }
+  
+  .body{
+    display: flex;
+    width: 70%;
+    justify-content: center;
+  }
+  .pagina .overlap-group {  
+    display: flex;
+    align-items: center;
+    width: 1500px;
+  }
+
+  .pagina .rectangle {
+    margin-left: 20px;
+    width: 60%;
+    height: 732px;
+    left: 0;
+    background-color: #d9d9d9;
+    border-radius: 19px;
+  }
+  
+  .pagina .bem-vindo-MBPE {
+    margin-left: 30px;
+    padding: 10vh;
+    width: 80%;
+    font-family: "Damion", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 25px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+    background-color: #d9d9d9;
+    border-radius: 19px;
+  }
+  
+  .pagina .text-wrapper {
+    font-family: "Damion", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 36px;
+    letter-spacing: 0;
+    font-weight: bold;
+  }
+  
+  .pagina .span {
+    font-family: "Amiri", Helvetica;
+  }
+  
+  .pagina .texto {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 136px;
+    top: 0;
+    left: 16px;
+  }
+  
+  .pagina .caixa {
+    position: absolute;
+    height: 414px;
+  }
+  
+  .pagina .atenciosamente-mbpe {
+    margin-left: 40px;
+    position: relative;
+    font-family: "Amiri", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 36px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+    font-weight: bold;
+  }
+  
+  .pagina .text-wrapper-2 {
+    font-family: "Amiri", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 36px;
+    letter-spacing: 0;
+  }
+  
+  .pagina .text-wrapper-3 {
+    font-family: "Licorice", Helvetica;
+  }
+  
+  .pagina .text-wrapper-4 {
+    font-size: 24px;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    }
+
+    a {
+    text-decoration: none;
+    color: white;
+    }
+    
+    .footer {
+      width: 100%;
+      height: 14vh;
+      background-color: #5E1515;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      color: white;
+      bottom: 0;
+      position: absolute;
+  }
+
+    .container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+
+  @media screen and (max-width: 1330px) {
+    .form-image {
+        display: none;
+    }
+    .container {
+        width: 50%;
+    }
+    .form {
+        width: 100%;
+    }
+
+    .overlap-group {
+      width: 90%;
+    }
+    
+    .rectangle {
+    margin-left: 20px;
+    width: 90%;
+    height: 732px;
+    top: 118px;
+    left: 0;
+    border-radius: 19px;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .pagina .overlap-group {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;  
+    width: 80%;
+  }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .screenshot {
+    height: 20vh;
+  }
+
+  .footer {
+    position: relative;
+  }
+}
+
